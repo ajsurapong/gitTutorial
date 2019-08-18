@@ -10,12 +10,14 @@
 <body>
     <h3>Hello Git</h3>
     <p>New paragraph</p>
-    <button onclick="sayHello()">OK</button>
+    <button>OK</button>
 
     <script>
         function sayHello() {
             alert("Hello");
         }
+
+        document.querySelector("button").addEventListener("click", sayHello);
     </script>
 </body>
 </html>
